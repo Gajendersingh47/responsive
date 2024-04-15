@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+
+}
+
+/* header starts here */
+header {
+    height: 75px;
+    background-color: burlywood;
+    padding: 3%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(45, 45, 45);
+}
+
+/* header ends here  */
+
+/* row starts here */
+.row {
+    height: auto;
+    width: 100%;
+    /* background-color: gray;  */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* row ends here  */
+
+/* .col starts here  */
+.col {
+    margin: 0.5%;
+    padding: 1%;
+    height: 370px;
+    float: left;
+}
+
+.col ul {
+    align-items: center;
+    height: auto;
+}
+
+.col ul li {
+    background-color: cadetblue;
+    width: 80%;
+    padding: 9%;
+    margin: 2% auto;
+    text-align: center;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* .col ends here  */
+
+/* first child starts here  */
+.col:first-child {
+    /* background-color: red;  */
+    width: 15%;
+    height: auto;
+}
+
+/* first child ends here  */
+
+/* second child starts here  */
+.col:nth-child(2) {
+    width: 58%;
+    height: auto;
+    /* background-color: orange;  */
+}
+
+.col:nth-child(2) h2 {
+    padding: 1%;
+    font-size: 35px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(46, 46, 46);
+    text-align: justify;
+}
+
+.col:nth-child(2) p {
+    padding: 1%;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(46, 46, 46);
+    text-align: justify;
+}
+
+/* second child ends here  */
+
+/* third child starts here  */
+.col:nth-child(3) {
+    width: 18%;
+    height: auto;
+    background-color: rgb(225, 225, 225);
+}
+
+.col:nth-child(3)::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+/* third child ends here  */
+
+/* .col .img starts here  */
+.col .img {
+    width: 100%;
+    height: 210px;
+    float: right;
+    /* background-color: brown; */
+}
+
+.col .img img {
+    width: 100%;
+    height: 200px;
+}
+
+/* .col .img ends here  */
+
+/* .para starts here  */
+.col .para {
+    height: auto;
+    width: 90%;
+    padding: 5%;
+    /* background-color: azure; */
+}
+
+.col .para p {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(46, 46, 46);
+    text-align: justify;
+}
+
+/* .para ends here  */
+
+/* footer  */
+footer {
+    height: 70px;
+    background-color: blueviolet;
+    padding: 3%;
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(45, 45, 45);
+}
+
+/* footer ends  */
+
+/* media query starts here  */
+
+/* small Desktop */
+@media screen and (max-width:1024px) {
+    /* header {
+        width: auto;
+    }
+
+    .row {
+        width: 100%;
+    } */
+
+    .col:first-child {
+        width: 15%;
+
+    }
+
+    .col:nth-child(2) {
+        width: 58%;
+    }
+
+    .col:nth-child(3) {
+        width: 18%;
+
+    }
+
+}
+
+/* Tablet */
+@media screen and (max-width:830px) {
+    /* header {
+        width: auto;
+    } */
+
+    .col:first-child {
+        width: 23%;
+
+    }
+
+    .col:nth-child(2) {
+        width: 71%;
+    }
+
+    .col:nth-child(3) {
+        width: 97%;
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width:480px) {
+    /* header {
+        width: auto;
+    } */
+
+    .col:first-child {
+        width: 97%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .col:nth-child(2) {
+        width: 97%;
+        height: auto;
+    }
+
+    .col:nth-child(3) {
+        width: 97%;
+        height: auto;
+    }
+}
+
+/* media query ends here  */
